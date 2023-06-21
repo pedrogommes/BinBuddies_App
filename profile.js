@@ -18,7 +18,6 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-// ...
 
 const monitorAuthState = () => {
   onAuthStateChanged(auth, async (user) => {
@@ -105,15 +104,13 @@ const handleProfilePictureUpload = async (event) => {
 const profilePictureInput = document.getElementById("profile-picture-input");
 profilePictureInput.addEventListener("change", handleProfilePictureUpload);
 
-// ...
-
 
 monitorAuthState();
 
 const logoutButton = document.getElementById("logout-button");
 logoutButton.style.display = "block";
 
-// Add event listener to logout button
+// event listener to logout button
 logoutButton.addEventListener("click", () => {
   signOut(auth)
     .then(() => {
