@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <title>Home</title>
+</head>
+<body>
+
+  <div class="searchContainer">
+
+  <div class="searchBar">
+    <input type="text" id="search-input" name="search" placeholder="Pesquisar">
+    <button id="search-button">Search</button>
+  </div>
+  
+  </div>
+
+
+  <div id="map"></div>
+
+  <div id="result-container"></div>
+
+  <div class="menuContainer">
+
+    <div class="menu">
+      <a href="Home.html"><img id="menuItem"  src="icons/location.png" alt="location"></a>
+      <a href="Profile.html"><img id="menuItem"  src="icons/profile.png" alt="profile"></a>
+      <a href=""><img id="menuItem"  src="icons/bookmark.png" alt="favorites"></a>
+  </div>
+
+</div>
+
+  <script type="module" src="Map.js"></script>
+
+</body>
+</html>

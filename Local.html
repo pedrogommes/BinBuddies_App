@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="Local.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+<div class="CARD">
+
+  
+
+  <div class="image-section">
+    <img id="locationImage" src="" alt="Location Image">
+    <div class="edit-button">
+      <div class="edit-button">
+        <button id="editImageButton" class="admin-button">
+          <img src="icons/edit.png" alt="Icon">
+          
+        </button>
+        <input type="file" id="locationImageInput" accept="image/*" style="display: none">
+
+      </div>
+    
+      </label>
+      <input type="file" id="imageInput" accept="image/*" style="display: none">
+    </div>
+  </div>
+
+<div class="content-section">
+    <h2 id="locationName"></h2>
+
+ </div>
+
+  <div class="Description">
+  <p id="locationDescription"></p>
+    <div class="edit-button">
+      <button id="editDescriptionButton" class="admin-button">
+        <img src="icons/edit.png" alt="Icon">
+      
+      </button>
+</div>
+</div>
+
+
+  <div class="feedback-section">
+    <h3>Partilhe a sua experiência aqui!</h3>
+    <div id="feedbacksContainer"></div>
+    <input type="text" id="opinionInput" placeholder="Comentar">
+    <button id="submitOpinionButton"><img src="icons/done.png"></button>
+  </div>
+
+  <div class="buttons">
+    <div class="directions-button">
+      <button id="directionsButton">
+        <img src="icons/assistantNav.png" alt="Icon">
+        Direções
+      </button>
+    </div>
+    <div class="save-button">
+      <button id="saveButton">
+        <img src="icons/bookmark.png" alt="Icon">
+        Guardar
+      </button>
+    </div>
+  </div>
+
+  <div class="menu">
+    <a href="Home.html"><img id="menuItem"  src="icons/location.png" alt="location"></a>
+    <a href="Profile.html"><img id="menuItem"  src="icons/profile.png" alt="profile"></a>
+    <a href=""><img id="menuItem"  src="icons/bookmark.png" alt="favorites"></a>
+</div>
+
+
+</div>
+
+  <script type="module" src="local.js"></script>
+
+</body>
+
+</html>

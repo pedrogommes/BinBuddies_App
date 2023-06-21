@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Profile</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+
+
+        <div id="user-info">
+            
+            <div class="profile-picture-container">
+                <img id="profile-picture" alt="Profile Picture">
+            </div>
+
+            <div class="name-container">
+                <p id="username"></p>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="profile-picture-input" class="file-input-label">
+                <img src="icons/edit.png" class="upload-button">
+            </label>
+            <input type="file" id="profile-picture-input">
+        </div>
+
+        <button id="logout-button">Logout</button>
+    
+
+        <div class="menu">
+            <a href="Home.html"><img id="menuItem"  src="icons/location.png" alt="location"></a>
+            <a href="Profile.html"><img id="menuItem"  src="icons/profile.png" alt="profile"></a>
+            <a href=""><img id="menuItem"  src="icons/bookmark.png" alt="favorites"></a>
+        </div>
+
+    </div>
+
+    <script type="module" src="profile.js"></script>
+</body>
+</html>
+
+
+
+

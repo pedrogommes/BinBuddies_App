@@ -1,0 +1,155 @@
+body {
+    font-family: poppins;
+    margin: 0;
+    overflow: hidden;
+
+    
+  }
+
+  html, body {
+  overflow-x: hidden;
+}
+
+/* Disable vertical scrolling */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+  
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ 
+  img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 2px solid #50e785;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.upload-button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #50e785;
+    padding: 4px;
+}
+
+/* Hide the default file input button */
+#profile-picture-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  #logout-button {
+    display: block;
+    width: 350px;
+    padding: 15px;
+    margin-top: 260px;
+    background-color: #50e785;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .menu {
+    width: 325px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    border: 2px solid;
+    border-color:#17eb6199 ;
+    border-radius: 32px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+  }
+    #menuItem {
+    height: 35px;
+    width: 35px;
+    border: none;
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+      body{
+        background-image: url("images/Background-11.png");
+        background-repeat: no-repeat;
+        background-color: #4bfd8999;
+
+
+      }
+  
+      .container {
+        background-color: white;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        max-width: 600px;
+        height: fit-content;
+        margin-left: auto; 
+        margin-right: auto;
+        padding-bottom: 60px;
+      }
+
+      #logout-button {
+        display: block;
+        width: 425px;
+        padding: 15px;
+        margin-top: 260px;
+      }
+
+      .menu {
+        width: 425px;
+        
+      }
+
+
+  
+    }

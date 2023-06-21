@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="login.css">
+    <title>BinBuddies - Login</title>
+</head>
+<body>
+
+
+    <div class="loginScreen">
+        <div class="card">
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="Password" required>
+            </div>
+            <p id="criarConta"><a href="signIn.html">Se não tem conta, clique aqui para criar.</a></p>
+            
+            <div>
+                <input type="button" id="LoginButton" value="Entrar">
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="service-worker.js"></script>
+<script type="module" src="Login.js"></script>
+
+</body>
+</html>

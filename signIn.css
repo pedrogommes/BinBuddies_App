@@ -1,0 +1,112 @@
+
+    
+
+    body {
+        font-family: poppins;
+        background-color: #50e785;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh;
+        margin: 0;
+        background-image: url("images/background\ L_S.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .signInScreen {
+        background-color: white;
+        width: 386px;
+        height: 421px;
+        border-radius: 64px 64px 0px 0px;
+        padding: 20px;
+    }
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 55px;
+    }
+
+    label {
+        font-weight: bold;
+
+    }
+
+    
+
+    #name {
+        padding: 14px;
+        width: 325px;
+        border-radius: 32px;
+        border: 2px solid #50e785;
+        margin-bottom: 15px;
+    }
+
+
+    #email {
+        padding: 14px;
+        width: 325px;
+        border-radius: 32px;
+        border: 2px solid #50e785;
+        margin-bottom: 15px;
+    }
+
+    #password {
+        padding: 14px;
+        width: 325px;
+        border-radius: 32px;
+        border: 2px solid #50e785;
+        margin-bottom: 15px;
+    }
+
+   
+
+    #SignUpButton {
+        background-color: #50e785;
+        border: none;
+        width: 325px;     ;
+        padding: 18px;
+        border-radius: 32px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+
+    @media (min-width: 768px) {
+
+
+      body{
+        background-image: url("images/Background-11.png");
+        background-repeat: repeat;
+        background-size: cover;
+        image-rendering: optimizeQuality;
+        background-color: #04f55899;
+
+
+      }
+        .signInScreen {
+          width: 600px;
+          height: 500px;
+          margin-top: 100px;
+        }
+      
+        .card {
+          margin-top: 60px;
+        }
+      
+        #name
+        #email,
+        #password {
+          width: 400px;
+        }
+      
+       
+      
+       
+      }
