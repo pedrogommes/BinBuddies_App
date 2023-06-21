@@ -30,7 +30,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const db = getFirestore(app); // Add this line to initialize Firestore
+const db = getFirestore(app);
 
 const login = async () => {
   console.log("Login function called.");
@@ -61,7 +61,7 @@ const login = async () => {
         // Redirect to the admin page
         window.location.href = "Home.html";
       } else {
-        // Redirect to the normal user page
+        // Redirect to the user page
         window.location.href = "Home.html";
       }
     } else {
@@ -72,7 +72,7 @@ const login = async () => {
     console.log("Error:", error);
     // Handle the error here
     console.log(error.message);
-    // Show the login error message to the user
+    
     showLoginError(error.message);
   }
 };
