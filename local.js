@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const locationData = querySnapshot.docs[0].data();
         const name = locationData.name;
         const description = locationData.description;
-        const image = locationData.image; // Assuming the location data has an 'image' field
+        const image = locationData.image;
   
         locationNameElement.textContent = name;
         locationDescriptionElement.textContent = description;
@@ -77,9 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     locationImageInput.click(); // Trigger the click event of the file input element
   });
   
-  // Add event listener to the file input
-  
-  // ...
 
 // Function to handle location image upload
 const handleLocationImageUpload = async (event) => {
@@ -127,9 +124,6 @@ const handleLocationImageUpload = async (event) => {
 // Add event listener to the file input
 const locationImageInput = document.getElementById('locationImageInput');
 locationImageInput.addEventListener('change', handleLocationImageUpload);
-
-// ...
-
 
 
 
@@ -240,100 +234,4 @@ locationImageInput.addEventListener('change', handleLocationImageUpload);
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Retrieve the latitude and longitude from the URL parameters
-  const urlParams = new URLSearchParams(window.location.search);
-  const latitude = parseFloat(urlParams.get('latitude'));
-  const longitude = parseFloat(urlParams.get('longitude'));
-
-  // Create an object with the retrieved coordinates
-  const locationCoordinates = { latitude, longitude };
-
-  // Use the locationCoordinates object for saving and displaying the locations
-
-  const saveButton = document.getElementById('saveButton');
-
-  saveButton.addEventListener('click', () => {
-    // Retrieve the necessary location data
-    const locationName = document.getElementById('locationName').textContent;
-
-    // Create an array to store the saved locations (if not already present)
-    const savedLocations = JSON.parse(localStorage.getItem('savedLocations')) || [];
-
-    // Add the current location to the saved locations array
-    savedLocations.push({ name: locationName, coordinates: locationCoordinates });
-
-    // Store the updated saved locations array in local storage
-    localStorage.setItem('savedLocations', JSON.stringify(savedLocations));
-
-    // Optionally, you can provide feedback to the user that the location was saved
-  });
-
-  // Retrieve the saved locations from local storage
-  const savedLocations = JSON.parse(localStorage.getItem('savedLocations')) || [];
-
-  // Generate HTML elements for each saved location
-  const savedLocationsContainer = document.getElementById('savedLocationsContainer'); // Replace with the ID of the container element on the page
-
-  savedLocations.forEach((location) => {
-    const locationElement = document.createElement('div');
-    locationElement.textContent = location.name;
-
-    savedLocationsContainer.appendChild(locationElement);
-  });
-
-  // Initialize the map and display the trajectory to the selected location
-  mapboxgl.accessToken = 'pk.eyJ1IjoicGVkcm9nb21lczI4IiwiYSI6ImNsaXNvOXhmaTAwbGMzZG04YmtlcHhpbjQifQ.ImOMkN8ZGCJXQo9H6TmOYQ';
-
-const map = new mapboxgl.Map({
-  container: 'map', 
-  // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-  style: 'mapbox://styles/mapbox/outdoors-v12', // style URL
-  center: [-8.575753, 41.256237], // starting position [lng, lat]
-  zoom: 8 // starting zoom
-});
-
-  // Add a marker at the selected location
-  const marker = new mapboxgl.Marker().setLngLat([longitude, latitude]).addTo(map);
-
-  // If you want to display a trajectory, you can add a line between the user's current location and the selected location
-  // Replace `userLongitude` and `userLatitude` with the actual coordinates of the user's current location
-  const userLongitude = 0.0; // Replace with the user's longitude
-  const userLatitude = 0.0; // Replace with the user's latitude
-
-  const trajectoryCoordinates = [
-    [userLongitude, userLatitude], // Start point (user's current location)
-    [longitude, latitude] // End point (selected location)
-  ];
-
-  const trajectoryGeoJSON = {
-    type: 'Feature',
-    geometry: {
-      type: 'LineString',
-      coordinates: trajectoryCoordinates
-    }
-  };
-
-  // Add the trajectory line to the map
-  map.on('load', () => {
-    map.addSource('trajectory', {
-      type: 'geojson',
-      data: trajectoryGeoJSON
-    });
-
-    map.addLayer({
-      id: 'trajectory',
-      type: 'line',
-      source: 'trajectory',
-      layout: {
-        'line-join': 'round',
-        'line-cap': 'round'
-      },
-      paint: {
-        'line-color': 'blue',
-        'line-width': 3
-      }
-    });
-  });
-});
 
