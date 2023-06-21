@@ -2,7 +2,6 @@
 
 body{
     font-family: poppins;
-    overflow: hidden;
 }
 
 
@@ -19,7 +18,7 @@ body{
 
 
 #search-input {
-  width: 265px;
+  width: 275px;
   border: 2px solid;
   border-radius: 32px;
   padding: 10px;
@@ -114,7 +113,7 @@ body{
     margin-top: 20px;
     padding: 15px;
     background-color: white;
-    top: 625px;
+    top: 615px;
     position: relative;
     position: -webkit-sticky;
   }
@@ -136,30 +135,15 @@ body{
       margin-left: 1em;
     }
 
-
- .menuContainer{
-  display: flex;
-  justify-content: center;
- }
-
-
-  .menu {
-    align-items: center;
-    width: 320px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    border: 2px solid;
-    border-color:#17eb6199 ;
-    border-radius: 32px;
-    margin-top: 20px;
-    padding: 15px;
-    background-color: white;
-    top: 1000px;
-  }
-    #menuItem {
-    height: 35px;
-    width: 35px;
+    .menu{
+      display: flex;
+      justify-content: center;
+      
     }
-    
+
+
+    .menu {
+      top: 690px;
+    }
+
   }

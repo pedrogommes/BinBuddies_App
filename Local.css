@@ -1,12 +1,17 @@
 body{
     font-family: poppins;
-   
 }
 
 .admin-button {
   display: block;
 }
 
+.CARD{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 #image-section{
   text-align: center;
@@ -17,8 +22,7 @@ body{
     border-radius: 32px;
     height: 230px;
     margin-top: 17px;
-    margin-left: 10px;
-    width: 350px;
+    width: 370px;
 }
 
 .image-section button{
@@ -27,7 +31,6 @@ body{
   border: none;
   height: 35px;
   width: 55px;
-  margin-left: 10px;
   margin-bottom: 20px;
 }
 
@@ -43,31 +46,27 @@ body{
   border: none;
   height: 35px;
   width: 55px;
-  margin-left: 10px;
   margin-bottom: 20px;
 }
 
 h2{
     font-size: 18px;
-    margin-left: 10px;
 }
 
 p{
     font-size: 14px;
-    margin-left: 10px;
 
 }
 
 h3{
   font-size: 16px;
-  margin-left: 10px;
 }
 
 #opinionInput{
   border-radius: 32px;
   border: 2px solid;
   border-color:#17eb6199 ;
-  width: 270px;
+  width: 280px;
   height: 30px;
   padding: 10px;
   font-size: 14px;
@@ -96,6 +95,7 @@ h3{
 
 .buttons {
     display: flex;
+    gap: 20px;
     
   }
 
@@ -104,8 +104,7 @@ h3{
     
     flex: 1;
     padding: 14px;
-    width: 175px;
-    margin-right: 10px;
+    width: 165px;
     font-weight: bold;
     background-color: #17eb6199;
     border-radius: 32px;
@@ -126,6 +125,7 @@ button :last-child{
     width: 24px;
   }
 
+
   .menu {
     width: 325px;
     align-items: center;
@@ -139,9 +139,8 @@ button :last-child{
     padding: 15px;
     background-color: white;
     position: relative;
-    position: -webkit-sticky;
   }
-    .menuItem {
+    #menuItem {
     height: 35px;
     width: 35px;
     }
@@ -156,7 +155,6 @@ button :last-child{
 
     .feedback p{
       font-size: 14px;
-      margin-left: 10px;
       margin-top: 10px;
       white-space: pre-line;
     }
@@ -168,7 +166,6 @@ button :last-child{
     border: none;
     height: 35px;
     width: 55px;
-    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -191,8 +188,8 @@ button :last-child{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
-    max-width: 800px;
+    margin-top: 10px;
+    max-width: 550px;
     margin-left: auto; 
     margin-right: auto;
     padding-top: 30px;
@@ -202,10 +199,10 @@ button :last-child{
 
   #locationImage{
     border-radius: 32px;
-    height: 330px;
+    height: 300px;
     margin-top: 17px;
     margin-left: 10px;
-    width: 550px;
+    width: 450px;
 }
 
 .image-section button{
@@ -231,16 +228,16 @@ button :last-child{
 }
 
 h2{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 p{
-    font-size: 20px;
+    font-size: 14px !important;
 
 }
 
 h3{
-  font-size: 26px;
+  font-size: 16px;
 }
 
 #opinionInput{
